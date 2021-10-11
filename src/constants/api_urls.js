@@ -1,0 +1,13 @@
+export const LOGIN_URL = '/api/v1/sign-in';
+export const EDIT_PROFILE = '/api/v1/edit-profile';
+export const CREATE_PROFILE = '/api/v1/create-account';
+export const GET_COINS_URL = '/api/v1/coins-data';
+export const SEND_OTP = '/api/v1/send-otp';
+export const VERFIFY_OTP = '/api/v1/verify-otp';
+export const UNMATCH_USER = '/api/v1/chat';
+export const CREATE_USER = '/api/v1/create-chat';
+export const GET_MESSAGES = '/api/v1/user-messages';
+const CHAT_URL = 'https://mengen.herokuapp.com';
+export const GET_CHATS = '/api/v1/chats';
+export const CREATE_CHATS = `${CHAT_URL}/mocks/chats`;
+export const CHAT_MESSAGES = id => `${CHAT_URL}/mocks/chat/${id}/messages`;
