@@ -31,13 +31,8 @@ const CreateAccountForm = props => {
     defaultValues: {},
   });
   const onSubmit = params => {
-    params = {
-      ...params,
-      images: JSON.parse(params.images),
-      mobile: mobile,
-      dob: dayjs(params.dob).format('DD/MM/YYYY'),
-    };
-    createUser(params);
+    props.navigation.navigate('signIn')
+
   };
 
   return (

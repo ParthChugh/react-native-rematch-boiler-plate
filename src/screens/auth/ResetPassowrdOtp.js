@@ -25,11 +25,15 @@ const ResetPasswordOTP = props => {
 
   const onSubmit = () => {
     if (value?.split('').length === 4 && value === '6754') {
-      if (createAccount) {
-        navigate('createAccountForm', props.route);
-      } else {
-        navigate('changePassword', props.route);
-      }
+      // if (createAccount) {
+      //   navigate('createAccountForm', props.route);
+      // } else {
+      //   navigate('changePassword', props.route);
+      // }
+      showMessage({
+        message: 'Success',
+        type: 'success',
+      });
     } else {
       showMessage({
         message: 'Please enter valid OTP',

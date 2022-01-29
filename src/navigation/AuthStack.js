@@ -34,57 +34,56 @@ const defaultNavOptions = {
 const AuthNavigator = ({user}) => {
   return (
     <AuthStackNavigator.Navigator screenOptions={defaultNavOptions}>
-      
-        <>
-          <AuthStackNavigator.Screen
-            name="signIn"
-            component={Layout(SignIn)}
-            options={{
-              title: 'Login',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="resetPassword"
-            component={Layout(ResetPassword)}
-            options={{
-              title: 'Reset Password',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="resetPasswordOtp"
-            component={Layout(ResetPasswordOtp)}
-            options={{
-              title: 'Reset Password',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="createAccountView"
-            component={Layout(CreateAccount)}
-            options={{
-              title: 'Create Account',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="createAccountOtp"
-            component={Layout(CreateAccountOtp)}
-            options={{
-              title: 'Create Account',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="createAccountForm"
-            component={Layout(CreateAccountForm)}
-            options={{
-              title: 'Create Account',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-        </>
+      <>
+        <AuthStackNavigator.Screen
+          name="createAccountForm"
+          component={Layout(CreateAccountForm)}
+          options={{
+            title: 'Create Account',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+        <AuthStackNavigator.Screen
+          name="signIn"
+          component={Layout(SignIn)}
+          options={{
+            title: 'Login',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+        <AuthStackNavigator.Screen
+          name="resetPassword"
+          component={Layout(ResetPassword)}
+          options={{
+            title: 'Reset Password',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+        <AuthStackNavigator.Screen
+          name="resetPasswordOtp"
+          component={Layout(ResetPasswordOtp)}
+          options={{
+            title: 'Reset Password',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+        <AuthStackNavigator.Screen
+          name="createAccountView"
+          component={Layout(CreateAccount)}
+          options={{
+            title: 'Create Account',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+        <AuthStackNavigator.Screen
+          name="createAccountOtp"
+          component={Layout(CreateAccountOtp)}
+          options={{
+            title: 'Create Account',
+            headerBackImage: () => <BackButton color={'black'} />,
+          }}
+        />
+      </>
     </AuthStackNavigator.Navigator>
   );
 };

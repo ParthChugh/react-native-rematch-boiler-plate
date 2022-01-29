@@ -35,10 +35,10 @@ const AuthTypeView = props => {
           margin-10
           onPress={() => navigateToNext('authentication')}>
           <Text center color={Colors.white} style={styles.buttonStyle}>
-            LOGIN
+            Continue
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           backgroundColor={Colors.searchBoxBg}
           style={styles.button}
           margin-10
@@ -48,7 +48,7 @@ const AuthTypeView = props => {
           <Text center color={Colors.darkBlack} style={styles.buttonStyle}>
             CREATE ACCOUNT
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       <View>
         <Text center style={styles.termsCondition}>
