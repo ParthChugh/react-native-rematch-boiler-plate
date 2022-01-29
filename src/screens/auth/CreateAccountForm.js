@@ -8,10 +8,13 @@ import dayjs from 'dayjs';
 import {Right, Address} from '../../assets/svgs';
 import CustomButton from '../common/CustomButton';
 
+
 const pickerData = [
-  {label: 'lorem ipsum', value: 'lorem ipsum 1'},
-  {label: 'lorem ipsum', value: 'lorem ipsum 2'},
-  {label: 'lorem ipsum', value: 'lorem ipsum 3'},
+  {label: 'Ice cream truck', value: 'lorem ipsum 1'},
+  {label: 'Food Truck', value: 'lorem ipsum 2'},
+  {label: 'Grilled Cheeserie Truck', value: 'lorem ipsum 3'},
+  {label: 'The Taco Truck', value: 'lorem ipsum 4'},
+  {label: 'BBQ Truck', value: 'lorem ipsum 5'},
 ];
 const CreateAccountForm = props => {
   const {
@@ -118,7 +121,7 @@ const CreateAccountForm = props => {
         loading={request}
         buttonText={'Continue'}
         rightIcon={
-          <View style={{position: 'absolute', top: 0, right: 0}}>
+          <View style={{position: 'absolute', top: '35%', left: '62%'}}>
             <Right />
           </View>
         }

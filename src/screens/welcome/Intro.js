@@ -15,14 +15,14 @@ const Intro = props => {
   const carouselItems = [
     {
       component: <GetStarted />,
-      title: '',
+      title: 'lorem ipsum',
       subTitle:
-        '',
+        'lorem ipsum',
     },
     {
       component: <Communication />,
-      title: '',
-      subTitle: '',
+      title: 'lorem ipsum',
+      subTitle: 'lorem ipsum',
     },
   ];
 
@@ -100,7 +100,7 @@ const Intro = props => {
           fontFamily: Typography.primaryFontFamily,
           fontWeight: 'bold',
         }}>
-        What is Storefront about
+        What is Storefront
       </Text>
       <Carousel
         containerStyle={{

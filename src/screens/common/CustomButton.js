@@ -31,8 +31,9 @@ const CustomButton = ({
             color={Colors.white}
             style={buttonStyle ? buttonStyle : styles.buttonStyle}>
             {buttonText}
-            {rightIcon}
+            
           </Text>
+          {rightIcon}
           
         </>
       )}
