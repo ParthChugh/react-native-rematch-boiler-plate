@@ -39,7 +39,7 @@ const PurchaseCoins = props => {
       prefill: {
         name: user.name,
         contact: user.mobile,
-        email: 'random@adcast.com',
+        email: 'random@StoreFront.com',
       },
       theme: {color: Colors.PrimaryColor},
     };

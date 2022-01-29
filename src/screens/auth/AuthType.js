@@ -26,10 +26,7 @@ const AuthTypeView = props => {
     <View style={styles.container}>
       <AuthType />
       <Text center style={styles.header}>
-        Welcome to
-      </Text>
-      <Text center style={styles.header2}>
-        Adcast
+        Welcome to StoreFront
       </Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -55,7 +52,7 @@ const AuthTypeView = props => {
       </View>
       <View>
         <Text center style={styles.termsCondition}>
-          By signing up you agree to AdCast
+          By signing up you agree to StoreFront
         </Text>
         <Text center color={Colors.PrimaryColor} style={styles.termsCondition}>
           Terms of Use{' '}

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AdCast.app"
-               BlueprintName = "AdCast"
-               ReferencedContainer = "container:AdCast.xcodeproj">
+               BuildableName = "StoreFront.app"
+               BlueprintName = "StoreFront"
+               ReferencedContainer = "container:StoreFront.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "AdCastTests.xctest"
-               BlueprintName = "AdCastTests"
-               ReferencedContainer = "container:AdCast.xcodeproj">
+               BuildableName = "StoreFrontTests.xctest"
+               BlueprintName = "StoreFrontTests"
+               ReferencedContainer = "container:StoreFront.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AdCast.app"
-            BlueprintName = "AdCast"
-            ReferencedContainer = "container:AdCast.xcodeproj">
+            BuildableName = "StoreFront.app"
+            BlueprintName = "StoreFront"
+            ReferencedContainer = "container:StoreFront.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AdCast.app"
-            BlueprintName = "AdCast"
-            ReferencedContainer = "container:AdCast.xcodeproj">
+            BuildableName = "StoreFront.app"
+            BlueprintName = "StoreFront"
+            ReferencedContainer = "container:StoreFront.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

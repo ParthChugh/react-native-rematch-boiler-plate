@@ -21,11 +21,11 @@ window.server = createServer({
     this.passthrough()
     this.post('/api/v1/sign-in', (schema, request) => {
       const attrs = JSON.parse(request.requestBody);
-
+      console.log('1331attrs13133', schema.users.all())
       const user = schema.users
         .all()
         .models.find(
-          el => el.mobile === attrs.mobile && el.password === attrs.password,
+          el => el.mobile === attrs.mobile,
         );
       if (user) {
         return { user, error: false };
@@ -316,7 +316,7 @@ window.server = createServer({
     )
     server.create('user', {
       id: 10,
-      mobile: '8149404001',
+      mobile: '8149401232134001',
       name: 'Nishanth',
       password: 'Password@123',
       dob: '11/12/1996',
@@ -335,8 +335,8 @@ window.server = createServer({
     });
     server.create('user', {
       id: 31,
-      mobile: '9944207703',
-      name: 'AdCast',
+      mobile: '999402131321352008',
+      name: 'StoreFront',
       password: 'Password@123',
       dob: '11/12/1996',
       gender: 'female',
@@ -354,7 +354,7 @@ window.server = createServer({
     });
     server.create('user', {
       id: 21,
-      mobile: '1234567890',
+      mobile: '1234512321321367890',
       name: 'Random Guy',
       password: 'Password@123',
       dob: '11/12/1996',

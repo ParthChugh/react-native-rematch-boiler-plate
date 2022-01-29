@@ -9,9 +9,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>AdCast</string>  
+	<string>StoreFront</string>  
 	<key>AppGroupName</key>
-  <string>group.AdCast</string>
+  <string>group.StoreFront</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

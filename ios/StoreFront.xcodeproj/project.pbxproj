@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* AdCastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AdCastTests.m */; };
+		00E356F31AD99517003FC87E /* StoreFrontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* StoreFrontTests.m */; };
 		04A498E269104826963E337C /* SofiaProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4740B34B69D2404FA691A727 /* SofiaProLight.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -28,9 +28,9 @@
 		9CAE7BD07EB647C1B968EE83 /* SofiaProMediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D7F6FFA2E2A4A4194F51CE6 /* SofiaProMediumItalic.otf */; };
 		A18266394686411F8A9A843C /* SofiaProExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 092761566C8347D9AF2F53C6 /* SofiaProExtraLight.otf */; };
 		A87A0CF19C1D4FBFB034CE69 /* SofiaProUltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA2907A21794B09B719BC39 /* SofiaProUltraLight.otf */; };
-		B8AC1C396DD0E15D36A3B2BA /* libPods-AdCast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ACA9C27A50176062F06F92 /* libPods-AdCast.a */; };
+		B8AC1C396DD0E15D36A3B2BA /* libPods-StoreFront.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ACA9C27A50176062F06F92 /* libPods-StoreFront.a */; };
 		D0D1D046856D41E98FDFC712 /* SofiaProMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70F64FFF150C41A4B6A1F85F /* SofiaProMedium.otf */; };
-		FEFF96DD04FA6E4BFA17E3D1 /* libPods-AdCast-AdCastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B506978BEF0054AEDD8E8C15 /* libPods-AdCast-AdCastTests.a */; };
+		FEFF96DD04FA6E4BFA17E3D1 /* libPods-StoreFront-StoreFrontTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B506978BEF0054AEDD8E8C15 /* libPods-StoreFront-StoreFrontTests.a */; };
 		FFBBDB27050646B0A5D631F5 /* SofiaProRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D1A0A7B318464F936DA75B /* SofiaProRegular.otf */; };
 /* End PBXBuildFile section */
 
@@ -40,28 +40,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = AdCast;
+			remoteInfo = StoreFront;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* AdCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* StoreFrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreFrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* AdCastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdCastTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* StoreFrontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreFrontTests.m; sourceTree = "<group>"; };
 		081C35227C054C85B7FDFDE1 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		092761566C8347D9AF2F53C6 /* SofiaProExtraLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProExtraLight.otf; path = ../src/assets/fonts/SofiaProExtraLight.otf; sourceTree = "<group>"; };
 		0D7F6FFA2E2A4A4194F51CE6 /* SofiaProMediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProMediumItalic.otf; path = ../src/assets/fonts/SofiaProMediumItalic.otf; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* AdCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AdCast/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AdCast/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AdCast/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdCast/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AdCast/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* StoreFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StoreFront/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StoreFront/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StoreFront/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StoreFront/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StoreFront/main.m; sourceTree = "<group>"; };
 		2008D7E863584CB694094E2E /* SofiaProUltraLightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProUltraLightItalic.otf; path = ../src/assets/fonts/SofiaProUltraLightItalic.otf; sourceTree = "<group>"; };
 		2EAC282E064B403CBCC2F3BE /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		3112CEE0263C53CE007BCE5A /* AdCast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdCast-Bridging-Header.h"; sourceTree = "<group>"; };
-		314D63AE264090BC0072019F /* AdCast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdCast-Bridging-Header.h"; sourceTree = "<group>"; };
-		31543C022636D2DA00675AD8 /* AdCast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdCast-Bridging-Header.h"; sourceTree = "<group>"; };
+		3112CEE0263C53CE007BCE5A /* StoreFront-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreFront-Bridging-Header.h"; sourceTree = "<group>"; };
+		314D63AE264090BC0072019F /* StoreFront-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreFront-Bridging-Header.h"; sourceTree = "<group>"; };
+		31543C022636D2DA00675AD8 /* StoreFront-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreFront-Bridging-Header.h"; sourceTree = "<group>"; };
 		31A060B32634440200E7D485 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		31A060B42634440200E7D485 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		31A060B52634440300E7D485 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		31A060C12634440400E7D485 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		31A060C22634440400E7D485 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		31A06186263449E400E7D485 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		31BD0BB22699F9D300F39615 /* AdCast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = AdCast.entitlements; path = AdCast/AdCast.entitlements; sourceTree = "<group>"; };
+		31BD0BB22699F9D300F39615 /* StoreFront.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = StoreFront.entitlements; path = StoreFront/StoreFront.entitlements; sourceTree = "<group>"; };
 		368E4DAE61504AF2902B68D4 /* SofiaProBlack.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProBlack.otf; path = ../src/assets/fonts/SofiaProBlack.otf; sourceTree = "<group>"; };
 		3872EBEF86F74EF9B81A65D4 /* SofiaProBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProBoldItalic.otf; path = ../src/assets/fonts/SofiaProBoldItalic.otf; sourceTree = "<group>"; };
 		39296B3336DA4713841B985C /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
@@ -96,25 +96,25 @@
 		77366C872B594DCC877C0297 /* SofiaProBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProBold.otf; path = ../src/assets/fonts/SofiaProBold.otf; sourceTree = "<group>"; };
 		7C21A9145FED491AB6B5203E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		7C588A567A604323B2E11310 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AdCast/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StoreFront/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3BB81D6B704E21A3A880DB /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		90BBFA2EB91B44D2B7C35724 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		92FD3BFD98E04F158F4EA2F9 /* SofiaProRegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProRegularItalic.otf; path = ../src/assets/fonts/SofiaProRegularItalic.otf; sourceTree = "<group>"; };
-		97ACA9C27A50176062F06F92 /* libPods-AdCast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdCast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97ACA9C27A50176062F06F92 /* libPods-StoreFront.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoreFront.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09AEBBADB6749ECAB19E398 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		A45120A6A4AC515AC7AFDFA6 /* Pods-AdCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCast.release.xcconfig"; path = "Target Support Files/Pods-AdCast/Pods-AdCast.release.xcconfig"; sourceTree = "<group>"; };
-		B506978BEF0054AEDD8E8C15 /* libPods-AdCast-AdCastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdCast-AdCastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45120A6A4AC515AC7AFDFA6 /* Pods-StoreFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFront.release.xcconfig"; path = "Target Support Files/Pods-StoreFront/Pods-StoreFront.release.xcconfig"; sourceTree = "<group>"; };
+		B506978BEF0054AEDD8E8C15 /* libPods-StoreFront-StoreFrontTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoreFront-StoreFrontTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59322521A3440CCAD44D103 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		B89983705EEB49C29CC69122 /* SofiaProExtraLightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProExtraLightItalic.otf; path = ../src/assets/fonts/SofiaProExtraLightItalic.otf; sourceTree = "<group>"; };
-		BA18CD2E96512139900E7713 /* Pods-AdCast-AdCastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCast-AdCastTests.release.xcconfig"; path = "Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA18CD2E96512139900E7713 /* Pods-StoreFront-StoreFrontTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFront-StoreFrontTests.release.xcconfig"; path = "Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests.release.xcconfig"; sourceTree = "<group>"; };
 		D022678E009E4E0B984CD81C /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		E90169F7BD0149DA8C8A3C5B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		EB5635E6DBA7441C86F27AE1 /* SofiaProLightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProLightItalic.otf; path = ../src/assets/fonts/SofiaProLightItalic.otf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F7AFC2BF48724B3196D79961 /* SofiaProSemiBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SofiaProSemiBoldItalic.otf; path = ../src/assets/fonts/SofiaProSemiBoldItalic.otf; sourceTree = "<group>"; };
 		F926A82411D64777B2BEEBA2 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		F9C86F1766B1DA55847F0CF6 /* Pods-AdCast-AdCastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCast-AdCastTests.debug.xcconfig"; path = "Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD07A420B109D9761B52872E /* Pods-AdCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCast.debug.xcconfig"; path = "Target Support Files/Pods-AdCast/Pods-AdCast.debug.xcconfig"; sourceTree = "<group>"; };
+		F9C86F1766B1DA55847F0CF6 /* Pods-StoreFront-StoreFrontTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFront-StoreFrontTests.debug.xcconfig"; path = "Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD07A420B109D9761B52872E /* Pods-StoreFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFront.debug.xcconfig"; path = "Target Support Files/Pods-StoreFront/Pods-StoreFront.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFF96DD04FA6E4BFA17E3D1 /* libPods-AdCast-AdCastTests.a in Frameworks */,
+				FEFF96DD04FA6E4BFA17E3D1 /* libPods-StoreFront-StoreFrontTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,20 +131,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A0614F2634481200E7D485 /* JavaScriptCore.framework in Frameworks */,
-				B8AC1C396DD0E15D36A3B2BA /* libPods-AdCast.a in Frameworks */,
+				B8AC1C396DD0E15D36A3B2BA /* libPods-StoreFront.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* AdCastTests */ = {
+		00E356EF1AD99517003FC87E /* StoreFrontTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* AdCastTests.m */,
+				00E356F21AD99517003FC87E /* StoreFrontTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = AdCastTests;
+			path = StoreFrontTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -155,10 +155,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* AdCast */ = {
+		13B07FAE1A68108700A75B9A /* StoreFront */ = {
 			isa = PBXGroup;
 			children = (
-				31BD0BB22699F9D300F39615 /* AdCast.entitlements */,
+				31BD0BB22699F9D300F39615 /* StoreFront.entitlements */,
 				31A060AE2634439600E7D485 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -167,15 +167,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = AdCast;
+			name = StoreFront;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				97ACA9C27A50176062F06F92 /* libPods-AdCast.a */,
-				B506978BEF0054AEDD8E8C15 /* libPods-AdCast-AdCastTests.a */,
+				97ACA9C27A50176062F06F92 /* libPods-StoreFront.a */,
+				B506978BEF0054AEDD8E8C15 /* libPods-StoreFront-StoreFrontTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,10 +245,10 @@
 		4B52810C63DEED90EF701FF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FD07A420B109D9761B52872E /* Pods-AdCast.debug.xcconfig */,
-				A45120A6A4AC515AC7AFDFA6 /* Pods-AdCast.release.xcconfig */,
-				F9C86F1766B1DA55847F0CF6 /* Pods-AdCast-AdCastTests.debug.xcconfig */,
-				BA18CD2E96512139900E7713 /* Pods-AdCast-AdCastTests.release.xcconfig */,
+				FD07A420B109D9761B52872E /* Pods-StoreFront.debug.xcconfig */,
+				A45120A6A4AC515AC7AFDFA6 /* Pods-StoreFront.release.xcconfig */,
+				F9C86F1766B1DA55847F0CF6 /* Pods-StoreFront-StoreFrontTests.debug.xcconfig */,
+				BA18CD2E96512139900E7713 /* Pods-StoreFront-StoreFrontTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -263,13 +263,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				314D63AE264090BC0072019F /* AdCast-Bridging-Header.h */,
-				3112CEE0263C53CE007BCE5A /* AdCast-Bridging-Header.h */,
-				31543C022636D2DA00675AD8 /* AdCast-Bridging-Header.h */,
+				314D63AE264090BC0072019F /* StoreFront-Bridging-Header.h */,
+				3112CEE0263C53CE007BCE5A /* StoreFront-Bridging-Header.h */,
+				31543C022636D2DA00675AD8 /* StoreFront-Bridging-Header.h */,
 				31A06186263449E400E7D485 /* File.swift */,
-				13B07FAE1A68108700A75B9A /* AdCast */,
+				13B07FAE1A68108700A75B9A /* StoreFront */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* AdCastTests */,
+				00E356EF1AD99517003FC87E /* StoreFrontTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4B52810C63DEED90EF701FF4 /* Pods */,
@@ -283,8 +283,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* AdCast.app */,
-				00E356EE1AD99517003FC87E /* AdCastTests.xctest */,
+				13B07F961A680F5B00A75B9A /* StoreFront.app */,
+				00E356EE1AD99517003FC87E /* StoreFrontTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,9 +292,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* AdCastTests */ = {
+		00E356ED1AD99517003FC87E /* StoreFrontTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AdCastTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StoreFrontTests" */;
 			buildPhases = (
 				54B9441EED68C854A08A5FC5 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -308,14 +308,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = AdCastTests;
-			productName = AdCastTests;
-			productReference = 00E356EE1AD99517003FC87E /* AdCastTests.xctest */;
+			name = StoreFrontTests;
+			productName = StoreFrontTests;
+			productReference = 00E356EE1AD99517003FC87E /* StoreFrontTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* AdCast */ = {
+		13B07F861A680F5B00A75B9A /* StoreFront */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AdCast" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StoreFront" */;
 			buildPhases = (
 				1879DA7A284FDF54B39DB219 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -330,9 +330,9 @@
 			);
 			dependencies = (
 			);
-			name = AdCast;
-			productName = AdCast;
-			productReference = 13B07F961A680F5B00A75B9A /* AdCast.app */;
+			name = StoreFront;
+			productName = StoreFront;
+			productReference = 13B07F961A680F5B00A75B9A /* StoreFront.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AdCast" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "StoreFront" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -365,8 +365,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* AdCast */,
-				00E356ED1AD99517003FC87E /* AdCastTests */,
+				13B07F861A680F5B00A75B9A /* StoreFront */,
+				00E356ED1AD99517003FC87E /* StoreFrontTests */,
 			);
 		};
 /* End PBXProject section */
@@ -436,7 +436,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AdCast-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StoreFront-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,7 +458,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AdCast-AdCastTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StoreFront-StoreFrontTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -471,15 +471,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9708D61F436746203B283029 /* [CP] Embed Pods Frameworks */ = {
@@ -488,15 +488,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdCast-AdCastTests/Pods-AdCast-AdCastTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7FCE98435B0BE1C95101F13 /* [CP] Copy Pods Resources */ = {
@@ -505,15 +505,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D987FE4DEF724B8C073594D8 /* [CP] Embed Pods Frameworks */ = {
@@ -522,15 +522,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdCast/Pods-AdCast-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -559,7 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* AdCastTests.m in Sources */,
+				00E356F31AD99517003FC87E /* StoreFrontTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +578,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* AdCast */;
+			target = 13B07F861A680F5B00A75B9A /* StoreFront */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -586,7 +586,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C86F1766B1DA55847F0CF6 /* Pods-AdCast-AdCastTests.debug.xcconfig */;
+			baseConfigurationReference = F9C86F1766B1DA55847F0CF6 /* Pods-StoreFront-StoreFrontTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,7 +594,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AdCastTests/Info.plist;
+				INFOPLIST_FILE = StoreFrontTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,18 +608,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdCast.app/AdCast";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreFront.app/StoreFront";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA18CD2E96512139900E7713 /* Pods-AdCast-AdCastTests.release.xcconfig */;
+			baseConfigurationReference = BA18CD2E96512139900E7713 /* Pods-StoreFront-StoreFrontTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = AdCastTests/Info.plist;
+				INFOPLIST_FILE = StoreFrontTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,21 +633,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdCast.app/AdCast";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreFront.app/StoreFront";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD07A420B109D9761B52872E /* Pods-AdCast.debug.xcconfig */;
+			baseConfigurationReference = FD07A420B109D9761B52872E /* Pods-StoreFront.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AdCast/AdCast.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StoreFront/StoreFront.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UL4Q6FXFSF;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = AdCast/Info.plist;
+				INFOPLIST_FILE = StoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,8 +658,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AdCast;
-				SWIFT_OBJC_BRIDGING_HEADER = "AdCast-Bridging-Header.h";
+				PRODUCT_NAME = StoreFront;
+				SWIFT_OBJC_BRIDGING_HEADER = "StoreFront-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -668,14 +668,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A45120A6A4AC515AC7AFDFA6 /* Pods-AdCast.release.xcconfig */;
+			baseConfigurationReference = A45120A6A4AC515AC7AFDFA6 /* Pods-StoreFront.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AdCast/AdCast.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StoreFront/StoreFront.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UL4Q6FXFSF;
-				INFOPLIST_FILE = AdCast/Info.plist;
+				INFOPLIST_FILE = StoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,8 +686,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AdCast;
-				SWIFT_OBJC_BRIDGING_HEADER = "AdCast-Bridging-Header.h";
+				PRODUCT_NAME = StoreFront;
+				SWIFT_OBJC_BRIDGING_HEADER = "StoreFront-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -819,7 +819,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AdCastTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StoreFrontTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -828,7 +828,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AdCast" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StoreFront" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -837,7 +837,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AdCast" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "StoreFront" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

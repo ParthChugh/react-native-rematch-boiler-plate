@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 8 / 2,
-    backgroundColor: Colors.PrimaryColor,
+    backgroundColor: Colors.PrimaryColor || '#008CFF',
     position: 'absolute',
     top: 20,
   },

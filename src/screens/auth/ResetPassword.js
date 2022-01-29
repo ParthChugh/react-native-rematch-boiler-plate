@@ -73,15 +73,12 @@ const ResetPassword = props => {
   return (
     <View>
       <View style={styles.container}>
-        <View>
-          <Text center style={styles.label}>
-            Continue With Phone
-          </Text>
-          <Text center style={styles.sublabel}>
-            Please enter phone number associated with your account. We will send
-            you a 4 digit code.
-          </Text>
-        </View>
+        <Text style={styles.label} >
+          Add Phone{'\n'}Number
+        </Text>
+        <Text style={styles.smallLabel} color={Colors.SecondaryColorLight}>
+          You're almost there
+        </Text>
         <Controller
           control={control}
           render={({field: {onChange, onBlur, value}}) => (
@@ -125,6 +122,7 @@ const ResetPassword = props => {
                   ]}
                   onBlur={onBlur}
                   onChangeText={value => onChange(value)}
+                  placeholder='Business Phone Number'
                   value={value}
                 />
                 {!errors.mobile && value.split('').length >= 10 && (
@@ -148,8 +146,9 @@ const ResetPassword = props => {
 
       <CustomButton
         handleSubmit={handleSubmit(onSubmit)}
-        buttonText={'Continue'}
+        buttonText={'Send Verification Code'}
         loading={props.request}
+        style={styles.button}
       />
     </View>
   );
@@ -165,17 +164,32 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
 
+  label: {
+    marginTop: 40,
+    fontSize: 32,
+    fontFamily: Typography.primaryFontFamily,
+    fontWeight: 'bold',
+    color: Colors.PrimaryColor || '#008CFF',
+  },
+  smallLabel: {
+    // marginTop: 40,
+    fontSize: 13,
+    fontFamily: Typography.primaryFontFamily,
+    marginBottom: 40,
+  },
+
   countryBox: {
     flexDirection: 'row',
     alignItems: 'center',
     height: 50,
-    borderWidth: 1,
+    // borderWidth: 1,
     borderRadius: 5,
     borderColor: Colors.textboxBorder,
   },
   input: {
     height: 50,
-    borderWidth: 1,
+    // borderWidth: 1,
+    borderBottomWidth: 1,
     borderRadius: 5,
     padding: 10,
     marginVertical: 10,
@@ -193,18 +207,19 @@ const styles = StyleSheet.create({
     color: Colors.SecondaryColorLight,
     marginBottom: 20,
   },
-  label: {
-    fontFamily: Typography.primaryFontFamily,
-    paddingHorizontal: 30,
-    ...Typography.text60,
-    marginVertical: 20,
-  },
   icon: {
     width: 20,
     height: 20,
     marginLeft: -30,
   },
+  button: {
+    borderRadius: 25,
+    height: 50,
+    marginHorizontal: 16,
+    marginTop: 25,
+  },
 });
+
 
 const selection = store.select.request.isActionLoading('user/send_otp');
 

@@ -16,7 +16,7 @@ import {connect} from 'react-redux';
 import PopupMenu from '../../../components/PopupMenu';
 import { openDatabase } from 'react-native-sqlite-storage';
 import dayjs from 'dayjs';
-const db = openDatabase({ name: 'AdCast.db' });
+const db = openDatabase({ name: 'StoreFront.db' });
   
 const SingleChat = props => {
   const {route, navigation, dispatch, unmatchUser, request, user, updateUserSuccess} = props;

@@ -14,6 +14,7 @@ export const user = {
   },
   reducers: {
     update_user_success(state, {response}) {
+      console.log('i', response)
       AsyncStorage.setItem('userData', JSON.stringify(response || {}));
       return {
         ...state,
@@ -42,6 +43,7 @@ export const user = {
   },
   effects: dispatch => ({
     async update_user(props) {
+      console.log('props3113', props)
       return dispatch({
         type: 'user/update_user',
         request: {

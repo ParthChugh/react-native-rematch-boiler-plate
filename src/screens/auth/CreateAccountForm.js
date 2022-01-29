@@ -1,30 +1,17 @@
 import React, {useState} from 'react';
-import {
-  Colors,
-  Image,
-  Text,
-  View,
-  TouchableOpacity,
-  Carousel,
-  Picker,
-  Typography,
-} from 'react-native-ui-lib';
+import {Colors, Text, View, Picker, Typography} from 'react-native-ui-lib';
 import {StyleSheet, TextInput} from 'react-native';
-import {UploadImage, Male, Female} from '../../assets/svgs';
 import {connect} from 'react-redux';
 import store from '../../../store';
 import {useForm, Controller} from 'react-hook-form';
-import {launchImageLibrary} from 'react-native-image-picker';
-import DatePicker from '../common/DateTimePicker';
 import dayjs from 'dayjs';
+import {Right, Address} from '../../assets/svgs';
 import CustomButton from '../common/CustomButton';
-import showIcon from '../../assets/images/icons/view.png';
-import hideIcon from '../../assets/images/icons/hide.png';
 
 const pickerData = [
-  {label: 'Relationship', value: 'relationship'},
-  {label: 'Dating', value: 'dating'},
-  {label: 'Marriage', value: 'Marriage'},
+  {label: 'lorem ipsum', value: 'lorem ipsum 1'},
+  {label: 'lorem ipsum', value: 'lorem ipsum 2'},
+  {label: 'lorem ipsum', value: 'lorem ipsum 3'},
 ];
 const CreateAccountForm = props => {
   const {
@@ -32,42 +19,13 @@ const CreateAccountForm = props => {
     otpResponse: {mobile},
     request,
   } = props;
-  const [confirmPasswordHidden, setConfirmPasswordHidden] = useState(true);
-  const [passwordHidden, setPasswordHidden] = useState(true);
-
-  const changeConfirmPasswordHiddenState = () => {
-    if (confirmPasswordHidden) {
-      setConfirmPasswordHidden(false);
-    } else {
-      setConfirmPasswordHidden(true);
-    }
-  };
-  const changePasswordHiddenState = () => {
-    if (passwordHidden) {
-      setPasswordHidden(false);
-    } else {
-      setPasswordHidden(true);
-    }
-  };
-  const images = [null, null, null, null, null];
-
-  const options = {
-    title: 'Get Image from Gallery',
-    includeBase64: true,
-    quality: 0.1,
-    mediaType: 'photo',
-    storageOptions: {
-      skipBackup: true,
-      path: 'images',
-    },
-  };
 
   const {
     control,
     handleSubmit,
     formState: {errors},
   } = useForm({
-    defaultValues: {images: JSON.stringify(images)},
+    defaultValues: {},
   });
   const onSubmit = params => {
     params = {
@@ -81,117 +39,29 @@ const CreateAccountForm = props => {
 
   return (
     <View style={styles.container}>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <Carousel
-            showCounter
-            containerStyle={{
-              height: 300,
-              width: '100%',
-            }}>
-            {JSON.parse(value).map((el, index) => {
-              if (!el) {
-                return (
-                  <TouchableOpacity
-                    key={index}
-                    style={styles.uploadIcon}
-                    onPress={() => {
-                      let updatedValue = JSON.parse(value);
-                      launchImageLibrary(options, response => {
-                        if (response.didCancel) {
-                          onChange(JSON.stringify(updatedValue));
-                        } else {
-                          updatedValue[index] = response?.base64;
-                          onChange(JSON.stringify(updatedValue));
-                        }
-                      });
-                    }}>
-                    <UploadImage />
-                  </TouchableOpacity>
-                );
-              }
-              return (
-                <TouchableOpacity
-                  style={styles.uploadIcon}
-                  onPress={() => {
-                    let updatedValue = JSON.parse(value);
-                    launchImageLibrary(options, response => {
-                      if (response.didCancel) {
-                        onChange(JSON.stringify(updatedValue));
-                      } else {
-                        updatedValue[index] = response?.base64;
-
-                        onChange(JSON.stringify(updatedValue));
-                      }
-                    });
-                  }}>
-                  <View style={styles.upload}>
-                    <UploadImage />
-                  </View>
-                  <Image
-                    source={{uri: `data:image/png;base64,${el}`}}
-                    resizeMode={'contain'}
-                    style={{
-                      width: '100%',
-                      height: 300,
-                    }}
-                  />
-                </TouchableOpacity>
-              );
-            })}
-          </Carousel>
-        )}
-        name="images"
-        rules={{required: false}}
-      />
-      <Text style={[styles.lablestyle]}>Name</Text>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <TextInput
-            style={[
-              styles.input,
-              {borderColor: errors.name ? 'red' : Colors.textboxBorder},
-            ]}
-            onBlur={onBlur}
-            onChangeText={value => onChange(value)}
-            value={value}
-          />
-        )}
-        name="name"
-        rules={{required: true}}
-        defaultValue=""
-      />
-      {errors.name ? (
-        <Text style={{color: Colors.ErrorRed, marginTop: -5}}>
-          Name is required.
-        </Text>
-      ) : (
-        <Text> </Text>
-      )}
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>
-        Why are you here?
-      </Text>
+      <Text style={styles.label}>Business Details</Text>
+      <Text style={styles.sublabel}>Some Details about the business.</Text>
       <Controller
         control={control}
         render={({field: {onChange, onBlur, value}}) => (
           <Picker
             marginT-15
-            placeholder=""
+            placeholder="Business Category"
             value={value}
             containerStyle={[
-              {
-                height: 50,
-                borderWidth: 1,
-                borderRadius: 5,
-                marginVertical: 10,
-                paddingLeft: 10,
-                paddingTop: 19,
-                color: Colors.darkBlack,
-              },
+              //   {
+              //     height: 50,
+              //     borderWidth: 1,
+
+              //     borderRadius: 5,
+              //     marginVertical: 10,
+              //     paddingLeft: 10,
+              //     paddingTop: 19,
+              //     color: Colors.darkBlack,
+              //   },
               {borderColor: errors.reason ? 'red' : Colors.textboxBorder},
             ]}
+            // rightIconSource={Check}
             onChange={items => {
               onChange(items);
             }}>
@@ -206,106 +76,17 @@ const CreateAccountForm = props => {
       />
       {errors.reason ? (
         <Text style={{color: Colors.ErrorRed, marginTop: -5}}>
-          Why are you here? is required.
+          Business Category is required.
         </Text>
       ) : (
         <Text> </Text>
       )}
+      <View
+        style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+        <Address />
+        <Text style={[styles.lablestyle]}>Address</Text>
+      </View>
 
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>Date of Birth</Text>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <DatePicker
-            onDateSelected={value => onChange(value)}
-            style={[
-              styles.input,
-              {borderColor: errors.dob ? 'red' : Colors.textboxBorder},
-            ]}
-            value={value}
-            mode={'date'}
-          />
-        )}
-        name="dob"
-        rules={{required: true}}
-        defaultValue=""
-      />
-      {errors.dob ? (
-        <Text style={{color: Colors.ErrorRed, marginTop: 1}}>
-          Date of Birth is required.
-        </Text>
-      ) : (
-        <Text> </Text>
-      )}
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>Gender</Text>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <View style={styles.genderContainer}>
-            <TouchableOpacity
-              backgroundColor={
-                value === 'male' ? Colors.PrimaryColor : Colors.white
-              }
-              style={[
-                styles.button,
-                {
-                  borderColor:
-                    value === 'male'
-                      ? Colors.PrimaryColor
-                      : errors.gender
-                      ? 'red'
-                      : Colors.textboxBorder,
-                },
-              ]}
-              margin-10
-              onPress={() => onChange('male')}>
-              <Male value={value === 'male'} />
-              <Text
-                center
-                color={value === 'male' ? Colors.white : 'rgba(43,41,46,0.7)'}
-                style={styles.buttonStyle}>
-                Male
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              backgroundColor={
-                value === 'female' ? Colors.PrimaryColor : Colors.white
-              }
-              style={[
-                styles.btn,
-                {
-                  borderColor:
-                    value === 'female'
-                      ? Colors.PrimaryColor
-                      : errors.gender
-                      ? 'red'
-                      : Colors.textboxBorder,
-                },
-              ]}
-              margin-10
-              onPress={() => onChange('female')}>
-              <Female value={value === 'female'} />
-              <Text
-                center
-                color={value === 'female' ? Colors.white : 'rgba(43,41,46,0.7)'}
-                style={styles.buttonStyle}>
-                Female
-              </Text>
-            </TouchableOpacity>
-          </View>
-        )}
-        name="gender"
-        rules={{required: true}}
-        defaultValue=""
-      />
-      {errors.gender ? (
-        <Text style={{color: Colors.ErrorRed, marginTop: -5}}>
-          Gender is required.
-        </Text>
-      ) : (
-        <Text> </Text>
-      )}
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>About me</Text>
       <Controller
         control={control}
         render={({field: {onChange, onBlur, value}}) => (
@@ -323,93 +104,12 @@ const CreateAccountForm = props => {
             value={value}
           />
         )}
-        name="aboutMe"
+        name="address"
         rules={{required: true}}
         defaultValue=""
       />
       {errors.aboutMe ? (
-        <Text style={{color: Colors.ErrorRed}}>About me is required.</Text>
-      ) : (
-        <Text> </Text>
-      )}
-
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>Password</Text>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <View style={styles.passwordViewContainer}>
-            <TextInput
-              style={[
-                styles.input,
-                {
-                  borderColor: errors.password ? 'red' : Colors.textboxBorder,
-                },
-              ]}
-              secureTextEntry={passwordHidden}
-              onBlur={onBlur}
-              onChangeText={value => onChange(value)}
-              value={value}
-            />
-            <TouchableOpacity
-              style={styles.icon}
-              onPress={changePasswordHiddenState}>
-              <Image
-                source={passwordHidden ? hideIcon : showIcon}
-                style={{width: 18, height: 18}}
-              />
-            </TouchableOpacity>
-          </View>
-        )}
-        rules={{required: true}}
-        name="password"
-        defaultValue=""
-      />
-
-      {errors.password ? (
-        <Text style={{color: Colors.ErrorRed, marginTop: -5}}>
-          Password is required.
-        </Text>
-      ) : (
-        <Text> </Text>
-      )}
-
-      <Text style={[styles.lablestyle, {marginTop: 10}]}>Confirm Password</Text>
-      <Controller
-        control={control}
-        render={({field: {onChange, onBlur, value}}) => (
-          <View style={styles.passwordViewContainer}>
-            <TextInput
-              style={[
-                styles.input,
-                {
-                  borderColor: errors.confirmPassword
-                    ? 'red'
-                    : Colors.textboxBorder,
-                },
-              ]}
-              secureTextEntry={confirmPasswordHidden}
-              onBlur={onBlur}
-              onChangeText={value => onChange(value)}
-              value={value}
-            />
-            <TouchableOpacity
-              style={styles.icon}
-              onPress={changeConfirmPasswordHiddenState}>
-              <Image
-                source={confirmPasswordHidden ? hideIcon : showIcon}
-                style={{width: 18, height: 18}}
-              />
-            </TouchableOpacity>
-          </View>
-        )}
-        rules={{required: true}}
-        name="confirmPassword"
-        defaultValue=""
-      />
-      {errors.confirmPassword ? (
-        <Text style={{color: Colors.ErrorRed}}>
-          Confirm password is required.
-        </Text>
+        <Text style={{color: Colors.ErrorRed}}>Address is required.</Text>
       ) : (
         <Text> </Text>
       )}
@@ -417,6 +117,13 @@ const CreateAccountForm = props => {
         handleSubmit={handleSubmit(onSubmit)}
         loading={request}
         buttonText={'Continue'}
+        rightIcon={
+          <View style={{position: 'absolute', top: 0, right: 0}}>
+            <Right />
+          </View>
+        }
+        style={styles.button}
+        buttonStyle={styles.buttonStyle}
       />
     </View>
   );
@@ -436,11 +143,6 @@ const styles = StyleSheet.create({
     width: 18,
     height: 18,
   },
-  uploadIcon: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
   input: {
     height: 50,
     borderWidth: 1,
@@ -453,44 +155,41 @@ const styles = StyleSheet.create({
   container: {
     marginHorizontal: 10,
   },
-  button: {
-    borderRadius: 5,
-    height: 50,
-    width: '47%',
-    marginLeft: -1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-  },
-  btn: {
-    borderRadius: 5,
-    height: 50,
-    width: '47%',
-    marginLeft: 13,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-  },
-  buttonStyle: {
-    fontWeight: '600',
-    marginLeft: 10,
-  },
   lablestyle: {
     fontFamily: Typography.primaryFontFamily,
     fontWeight: '400',
     fontSize: 13,
     color: Colors.SecondaryColorLight,
     opacity: 0.7,
+    textAlignVertical: 'center',
+    marginTop: 10,
   },
-  genderContainer: {
-    flexDirection: 'row',
+
+  button: {
+    borderRadius: 25,
+    height: 50,
+    marginHorizontal: 16,
+    marginTop: 25,
   },
-  upload: {
-    position: 'absolute',
-    zIndex: 999,
-    opacity: 0.5,
+  label: {
+    marginTop: 40,
+    fontSize: 32,
+    fontFamily: Typography.primaryFontFamily,
+    fontWeight: 'bold',
+    color: Colors.PrimaryColor || '#008CFF',
+  },
+  sublabel: {
+    // marginTop: 40,
+    fontSize: 13,
+    fontFamily: Typography.primaryFontFamily,
+    marginBottom: 40,
+  },
+  buttonStyle: {
+    paddingTop: 15,
+    fontFamily: Typography.primaryFontFamily,
+    fontWeight: '600',
+    fontSize: 16,
+    width: '100%',
   },
 });
 

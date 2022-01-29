@@ -30,6 +30,8 @@ import Send from './Send';
 import BackButton from './BackButton';
 import CameraUpload from './CameraUpload'
 import Check from './Check'
+import Address from './Address'
+import Right from './RightIcon'
 
 export {
   Communication,
@@ -63,5 +65,7 @@ export {
   Send,
   BackButton,
   CameraUpload,
-  Check
+  Check,
+  Right,
+  Address
 };

@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.AdCast</string>
+		<string>group.StoreFront</string>
 	</array>
 </dict>
 </plist>

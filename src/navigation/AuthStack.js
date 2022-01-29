@@ -39,36 +39,7 @@ const defaultNavOptions = {
 const AuthNavigator = ({user}) => {
   return (
     <AuthStackNavigator.Navigator screenOptions={defaultNavOptions}>
-      {user.user ? (
-        <>
-          <AuthStackNavigator.Screen
-            name="BuyCoins"
-            component={BuyCoins}
-            options={{title: 'Purchase Coins'}}
-          />
-          <AuthStackNavigator.Screen
-            name="EditProfile"
-            component={Layout(EditProfile)}
-            options={{
-              title: 'Edit Profile',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="UpdateImages"
-            component={Layout(UpdateImages)}
-            options={{
-              title: 'Update Photos',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="Home"
-            component={BottomTabs}
-            options={{headerShown: false}}
-          />
-        </>
-      ) : (
+      
         <>
           <AuthStackNavigator.Screen
             name="signIn"
@@ -127,7 +98,6 @@ const AuthNavigator = ({user}) => {
             }}
           />
         </>
-      )}
     </AuthStackNavigator.Navigator>
   );
 };

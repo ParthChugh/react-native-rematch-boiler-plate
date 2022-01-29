@@ -15,14 +15,14 @@ const Intro = props => {
   const carouselItems = [
     {
       component: <GetStarted />,
-      title: 'Real Money for Real Reach',
+      title: '',
       subTitle:
-        'Help your network by referring great Businesses, products and earn real money',
+        '',
     },
     {
       component: <Communication />,
-      title: 'Your recommendation is powerful',
-      subTitle: 'Use social networks and other medias where ',
+      title: '',
+      subTitle: '',
     },
   ];
 
@@ -100,7 +100,7 @@ const Intro = props => {
           fontFamily: Typography.primaryFontFamily,
           fontWeight: 'bold',
         }}>
-        What is AdCast about
+        What is Storefront about
       </Text>
       <Carousel
         containerStyle={{
@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 40,
     marginBottom: 20,
+    backgroundColor: Colors.PrimaryColor || '#008CFF',
   },
 });
 

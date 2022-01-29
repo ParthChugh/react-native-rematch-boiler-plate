@@ -125,7 +125,7 @@ const UploadImages = props => {
                   height: 63,
                   borderRadius: 10,
                   borderWidth: 1,
-                  borderColor: Colors.PrimaryColor,
+                  borderColor: Colors.PrimaryColor || '#008CFF',
                 }}
               />
             </TouchableOpacity>

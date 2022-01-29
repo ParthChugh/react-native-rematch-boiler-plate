@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   name: {
-    color: Colors.PrimaryColor,
+    color: Colors.PrimaryColor || '#008CFF',
     fontSize: 16,
     fontWeight: '600',
     fontFamily: Typography.primaryFontFamily,

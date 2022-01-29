@@ -32,7 +32,7 @@ function Container(props) {
   }, [userData]);
   return (
     <NavigationContainer theme={MyTheme}>
-      {user ? <AuthNavigator /> : <IntroNavigator />}
+      <IntroNavigator />
     </NavigationContainer>
   );
 }

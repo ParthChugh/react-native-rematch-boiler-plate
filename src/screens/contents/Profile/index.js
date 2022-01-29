@@ -60,7 +60,7 @@ function Profile(props) {
       prefill: {
         name: user.name,
         contact: user.mobile,
-        email: 'random@adcast.com',
+        email: 'random@StoreFront.com',
       },
       theme: {color: '#F37254'},
     };
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
   subHeadingBalance: {
     fontSize: 16,
     marginHorizontal: 10,
-    color: Colors.PrimaryColor,
+    color: Colors.PrimaryColor || '#008CFF',
   },
   image: {
     backgroundColor: Colors.white,

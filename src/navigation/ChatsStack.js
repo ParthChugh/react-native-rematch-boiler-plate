@@ -15,7 +15,7 @@ const ChatstackNavigator = createStackNavigator();
 
 const defaultNavOptions = {
   headerStyle: {
-    backgroundColor: Colors.PrimaryColor,
+    backgroundColor: Colors.PrimaryColor || '#008CFF',
   },
   headerTitleAlign: 'left',
   headerTintColor: 'white',
@@ -42,7 +42,7 @@ export const ChatsNavigator = ({navigation, route}) => {
         name="Chats"
         component={Chats}
         options={{
-          title: 'AdCast',
+          title: 'StoreFront',
           headerBackImage: () => <BackButton color={'white'} />,
         }}
       />

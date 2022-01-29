@@ -16,7 +16,7 @@ const HomeStackNavigator = createStackNavigator();
 
 const defaultNavOptions = {
   headerStyle: {
-    backgroundColor: Colors.PrimaryColor,
+    backgroundColor: Colors.PrimaryColor || '#008CFF',
   },
   headerTitleAlign: 'left',
   headerTintColor: 'white',
@@ -42,7 +42,7 @@ export const HomeNavigator = ({navigation, route}) => {
         name="Home"
         component={Layout(Home)}
         options={{
-          title: 'AdCast',
+          title: 'StoreFront',
           headerRight: () => (
             <View style={styles.marginRight10}>
               <Dots />

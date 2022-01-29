@@ -7,6 +7,7 @@ import {
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+import {showMessage} from 'react-native-flash-message';
 import CustomButton from '../common/CustomButton';
 
 const ResetPasswordOTP = props => {
@@ -23,24 +24,26 @@ const ResetPasswordOTP = props => {
   });
 
   const onSubmit = () => {
-    if (value?.split('').length === 4) {
+    if (value?.split('').length === 4 && value === '6754') {
       if (createAccount) {
         navigate('createAccountForm', props.route);
       } else {
         navigate('changePassword', props.route);
       }
+    } else {
+      showMessage({
+        message: 'Please enter valid OTP',
+        type: 'danger',
+      });
     }
   };
   return (
     <View>
       <View style={styles.container}>
         <View>
-          <Text center style={styles.label}>
-            OTP Code
-          </Text>
-          <Text center style={styles.sublabel}>
-            Enter the verification code that we’ve send you.
-          </Text>
+          <Text style={styles.label}>Verify your Phone Number</Text>
+          <Text style={styles.sublabel}>Just a little more.</Text>
+
           <View>
             <CodeField
               ref={ref}
@@ -73,7 +76,7 @@ const ResetPasswordOTP = props => {
           </View>
         </View>
       </View>
-      <CustomButton handleSubmit={onSubmit} buttonText={'Continue'} />
+      <CustomButton handleSubmit={onSubmit} buttonText={'Continue'} style={styles.button}/>
       <View style={styles.button}>
         <Button
           backgroundColor={Colors.white}
@@ -107,33 +110,37 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     fontWeight: 'bold',
   },
-  button: {
-    borderRadius: 5,
-    height: 50,
-  },
+
   termsCondition: {
     paddingVertical: 10,
     textAlign: 'right',
   },
-  sublabel: {
-    fontFamily: Typography.primaryFontFamily,
-    paddingHorizontal: 20,
-    color: Colors.SecondaryColorLight,
-    marginBottom: 30,
-    marginVertical: -10,
-  },
+  // sublabel: {
+  //   fontFamily: Typography.primaryFontFamily,
+  //   paddingHorizontal: 20,
+  //   color: Colors.SecondaryColorLight,
+  //   marginBottom: 30,
+  //   marginVertical: -10,
+  // },
   label: {
+    marginTop: 40,
+    fontSize: 32,
     fontFamily: Typography.primaryFontFamily,
-    paddingHorizontal: 30,
-    ...Typography.text60,
-    marginVertical: 20,
+    fontWeight: 'bold',
+    color: Colors.PrimaryColor || '#008CFF',
+  },
+  sublabel: {
+    // marginTop: 40,
+    fontSize: 13,
+    fontFamily: Typography.primaryFontFamily,
+    marginBottom: 40,
   },
   underlineStyleBase: {
     width: 65,
     height: 50,
     color: 'black',
     borderWidth: 1,
-    borderColor: Colors.PrimaryColor,
+    borderColor: Colors.PrimaryColor || '#008CFF',
     backgroundColor: Colors.PrimaryColorMedium,
     borderRadius: 5,
     textAlign: 'center',
@@ -161,6 +168,12 @@ const styles = StyleSheet.create({
   },
   focusCell: {
     borderColor: '#000',
+  },
+  button: {
+    borderRadius: 25,
+    height: 50,
+    marginHorizontal: 16,
+    marginTop: 25,
   },
 });
 
