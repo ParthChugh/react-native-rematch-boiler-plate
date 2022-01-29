@@ -6,14 +6,9 @@ import {
 import SignIn from '../screens/auth/SignIn';
 import ResetPassword from '../screens/auth/ResetPassword';
 import ResetPasswordOtp from '../screens/auth/ResetPassowrdOtp';
-import ChangePassword from '../screens/auth/ChangePassword';
 import CreateAccount from '../screens/auth/CreateAccount';
 import CreateAccountOtp from '../screens/auth/CreateAccountOtp';
 import CreateAccountForm from '../screens/auth/CreateAccountForm';
-import BuyCoins from '../screens/auth/BuyCoins';
-import EditProfile from '../screens/auth/EditProfile';
-import UpdateImages from '../screens/auth/UpdateImage';
-import {BottomTabs} from './BottomStack';
 import {Layout} from '../screens/Layout';
 import {connect} from 'react-redux';
 import {Typography} from 'react-native-ui-lib';
@@ -60,14 +55,6 @@ const AuthNavigator = ({user}) => {
           <AuthStackNavigator.Screen
             name="resetPasswordOtp"
             component={Layout(ResetPasswordOtp)}
-            options={{
-              title: 'Reset Password',
-              headerBackImage: () => <BackButton color={'black'} />,
-            }}
-          />
-          <AuthStackNavigator.Screen
-            name="changePassword"
-            component={Layout(ChangePassword)}
             options={{
               title: 'Reset Password',
               headerBackImage: () => <BackButton color={'black'} />,

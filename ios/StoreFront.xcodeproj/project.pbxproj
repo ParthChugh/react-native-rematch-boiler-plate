@@ -301,7 +301,6 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				68CC872BCC51EFE7597D9086 /* [CP] Copy Pods Resources */,
-				9708D61F436746203B283029 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,7 +323,6 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				B7FCE98435B0BE1C95101F13 /* [CP] Copy Pods Resources */,
-				D987FE4DEF724B8C073594D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,23 +480,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9708D61F436746203B283029 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront-StoreFrontTests/Pods-StoreFront-StoreFrontTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B7FCE98435B0BE1C95101F13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,23 +495,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D987FE4DEF724B8C073594D8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFront/Pods-StoreFront-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {

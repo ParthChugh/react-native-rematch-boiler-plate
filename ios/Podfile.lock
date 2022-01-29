@@ -12,7 +12,6 @@ PODS:
     - React-jsi (= 0.64.0)
     - ReactCommon/turbomodule/core (= 0.64.0)
   - glog (0.3.5)
-  - razorpay-pod (1.1.12)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -208,17 +207,8 @@ PODS:
   - React-jsinspector (0.64.0)
   - react-native-blur (0.8.0):
     - React
-  - react-native-image-picker (3.5.0):
-    - React-Core
-  - react-native-pager-view (5.1.5):
-    - React-Core
-  - react-native-razorpay (2.2.4):
-    - razorpay-pod
-    - React
   - react-native-safe-area-context (3.2.0):
     - React-Core
-  - react-native-sqlite-storage (5.0.0):
-    - React
   - react-native-webview (11.4.2):
     - React-Core
   - React-perflogger (0.64.0)
@@ -291,8 +281,6 @@ PODS:
     - React-Core
   - RNCClipboard (1.5.1):
     - React-Core
-  - RNChatScreen (1.0.0):
-    - React
   - RNCMaskedView (0.1.10):
     - React
   - RNCPicker (1.14.0):
@@ -358,11 +346,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - "react-native-blur (from `../node_modules/@react-native-community/blur`)"
-  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
-  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
-  - react-native-razorpay (from `../node_modules/react-native-razorpay`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
-  - react-native-sqlite-storage (from `../node_modules/react-native-sqlite-storage`)
   - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -379,7 +363,6 @@ DEPENDENCIES:
   - ReactNativeUiLib (from `../node_modules/react-native-ui-lib/lib`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
-  - RNChatScreen (from `../node_modules/react-native-chat-screen/ios`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
   - "RNDateTimePicker (from `../node_modules/@react-native-community/datetimepicker`)"
@@ -393,7 +376,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - boost-for-react-native
-    - razorpay-pod
 
 EXTERNAL SOURCES:
   BVLinearGradient:
@@ -430,16 +412,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-blur:
     :path: "../node_modules/@react-native-community/blur"
-  react-native-image-picker:
-    :path: "../node_modules/react-native-image-picker"
-  react-native-pager-view:
-    :path: "../node_modules/react-native-pager-view"
-  react-native-razorpay:
-    :path: "../node_modules/react-native-razorpay"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
-  react-native-sqlite-storage:
-    :path: "../node_modules/react-native-sqlite-storage"
   react-native-webview:
     :path: "../node_modules/react-native-webview"
   React-perflogger:
@@ -472,8 +446,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNCClipboard:
     :path: "../node_modules/@react-native-community/clipboard"
-  RNChatScreen:
-    :path: "../node_modules/react-native-chat-screen/ios"
   RNCMaskedView:
     :path: "../node_modules/@react-native-community/masked-view"
   RNCPicker:
@@ -500,7 +472,6 @@ SPEC CHECKSUMS:
   FBLazyVector: 49cbe4b43e445b06bf29199b6ad2057649e4c8f5
   FBReactNativeSpec: 23ecea4b1beafbb9a7fbbf5c7524fe976b2a5468
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
-  razorpay-pod: e2e8cf25aea59eef51c6851716f188df71adab86
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 2f8cb5b7533219bf4218a045f92768129cf7050a
   RCTTypeSafety: 512728b73549e72ad7330b92f3d42936f2a4de5b
@@ -513,11 +484,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 06a9c77b56902ae7ffcdd7a4905f664adc5d237b
   React-jsinspector: 0ae35a37b20d5e031eb020a69cc5afdbd6406301
   react-native-blur: cad4d93b364f91e7b7931b3fa935455487e5c33c
-  react-native-image-picker: 05eefd9232123c5ebde7979c3eefb890b57a87ff
-  react-native-pager-view: c0c3833fbf06f3c63fb0ef8c4125bf1363b073d8
-  react-native-razorpay: 56c4f4a15b7d502496fdbb7a72a7c86c441a986f
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
-  react-native-sqlite-storage: 418ef4afc5e6df6ce3574c4617e5f0b65cffde55
   react-native-webview: 4c85a3e5de574ee8c2c0985b4bebbdd240f49304
   React-perflogger: 9c547d8f06b9bf00cb447f2b75e8d7f19b7e02af
   React-RCTActionSheet: 3080b6e12e0e1a5b313c8c0050699b5c794a1b11
@@ -534,7 +501,6 @@ SPEC CHECKSUMS:
   ReactNativeUiLib: cde7263a7d308b60161cd286f95c9433e79f2f7d
   RNCAsyncStorage: f47a7e8f927f7c9da947491fc55752eb9ce17f2d
   RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
-  RNChatScreen: 63019bd3960723949ad89fa06351e09896e9aeec
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNCPicker: 1a266981fc99330c252f5f98b3f09a377a35d88c
   RNDateTimePicker: 8dcfab802edece406f4f4780130974a0e04213b4
